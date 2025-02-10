@@ -1,4 +1,7 @@
-set -e 
+set -e
+
+echo unzipping msk_db.sql.zip
+gunzip msk_db.sql.gz
 
 echo Setup Python Environment
 pip install -r requirements.txt

@@ -1,3 +1,9 @@
+# application
+environs==14.1.0
+Jinja2==3.1.5
+PyYAML==6.0.2
+SQLAlchemy==2.0.38
+psycopg2==2.9.10
 # unittest
 pytest==8.2.1
 pytest-cov==4.1.0
