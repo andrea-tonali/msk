@@ -11,7 +11,7 @@ To run the project, execute the following bash script:
 ./init.sh
 ```
 
-The application (i.e. Airflow) will be available at http://localhost:8080.
+The application (i.e. Airflow) will be available at http://localhost:8080. Once the application is running, you can trigger the `msk_denormalize_patient_journey` DAG to start the ETL process or wait for the hourly schedule.
 
 [DAG](./dags/msk_denormalize_patient_journey.py) will be executed every hour.
 
