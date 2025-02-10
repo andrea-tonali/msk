@@ -1,0 +1,5 @@
+msk_db:
+    table: patient_journey_schedule_window
+    batch_size: 10000
+    query: basedata.jinja.sql
+    offset: 0

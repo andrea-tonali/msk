@@ -1,0 +1,8 @@
+# unittest
+pytest==8.2.1
+pytest-cov==4.1.0
+coverage==7.2.7
+pytest-env==0.8.2
+# linting
+mypy==1.10.0
+flake8==7.0.0

@@ -1,0 +1,28 @@
+name: msk-etl
+
+on:
+    pull_request:
+      paths:
+        - etls/**
+      branches: [master]
+
+jobs:
+  unittests:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run unittests
+        working-directory: msk/etls/
+        run: ./ci-tests.sh
+
+      - name: Coverage Report
+        uses: orgoro/coverage@v3.1
+        with:
+          coverageFile: msk/etls/coverage.xml
+          thresholdAll: 0.2
+          token: ${{ github.token }}
