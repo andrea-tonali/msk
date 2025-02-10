@@ -3,7 +3,7 @@ name: msk-etl
 on:
     pull_request:
       paths:
-        - etls/**
+        - msk/**
       branches: [master]
 
 jobs:
