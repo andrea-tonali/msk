@@ -8,7 +8,7 @@ docker rm postgres_msk
 # Set Variables
 export CONTAINER_NAME="postgres_msk"
 export IMAGE_NAME="postgres_msk_image"
-export POSTGRES_VERSION="15"  # Change to your preferred version
+export POSTGRES_VERSION="15"
 export DB_PORT=5433
 export DB_USER="postgres"
 export DB_PASSWORD="postgres"
